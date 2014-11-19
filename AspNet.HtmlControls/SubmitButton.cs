@@ -2,7 +2,7 @@
 
 namespace AspNet.HtmlControls
 {
-    public class SubmitButton : Input
+    public class SubmitButton : FormField
     {
         private static readonly object EventClick = new object();
 

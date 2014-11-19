@@ -2,7 +2,7 @@
 
 namespace AspNet.HtmlControls
 {
-    public class TextArea : Input
+    public class TextArea : FormField, ITextControl
     {
         public TextArea() : base("textarea")
         {
@@ -14,7 +14,7 @@ namespace AspNet.HtmlControls
             get { return InputTypes.Invalid;}
         }
 
-        public string Value
+        public string Text
         {
             get { return ViewState["Value"] as string; }
             set { ViewState["Value"] = value; }
@@ -23,12 +23,12 @@ namespace AspNet.HtmlControls
         protected override void LoadPostData(string postValue, bool hasKey)
         {
             if (hasKey)
-                Value = postValue;
+                Text = postValue;
         }
 
         protected override void RenderChildren(HtmlTextWriter writer)
         {
-            writer.Write(Value);
+            writer.Write(Text);
         }
     }
 }

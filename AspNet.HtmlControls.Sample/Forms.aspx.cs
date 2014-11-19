@@ -19,5 +19,10 @@ namespace AspNet.HtmlControls.Sample
         {
             SubmitText.Text = "Sub2 Clicked";
         }
+
+        protected void Sub3_OnClick(object sender, EventArgs e)
+        {
+            Response.Write(T1.Text);
+        }
     }
 }

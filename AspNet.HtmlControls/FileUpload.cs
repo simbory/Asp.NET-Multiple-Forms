@@ -3,7 +3,7 @@ using System.Web;
 
 namespace AspNet.HtmlControls
 {
-    public class FileUpload : Input
+    public class FileUpload : FormField
     {
         protected override InputTypes Type
         {

@@ -3,7 +3,7 @@ using System.Web.UI;
 
 namespace AspNet.HtmlControls
 {
-    public class ImageButton : Input
+    public class ImageButton : FormField
     {
         protected override InputTypes Type
         {

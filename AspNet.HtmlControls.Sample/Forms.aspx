@@ -21,9 +21,10 @@
         <an:textbox HtmlID="username" Name="username" runat="server" />
         <an:SubmitButton runat="server" Text="Submit2" OnClick="Sub2_Click"/>
     </an:Form>
-    <fieldset>
-        <legend>LoginForm</legend>
-        <uc1:Login runat="server"/>
-    </fieldset>
+    <uc1:Login runat="server"/>
+    <form runat="server">
+        <an:TextArea runat="server" ID="T1" Name="T1"/>
+        <an:SubmitButton runat="server" ID="Sub3" OnClick="Sub3_OnClick"/>
+    </form>
 </body>
 </html>

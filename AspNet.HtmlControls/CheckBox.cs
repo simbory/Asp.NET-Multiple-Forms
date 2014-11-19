@@ -2,7 +2,7 @@
 
 namespace AspNet.HtmlControls
 {
-    public class CheckBox : Input
+    public class CheckBox : FormField
     {
         public CheckBox()
         {

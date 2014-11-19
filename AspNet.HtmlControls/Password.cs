@@ -1,18 +1,20 @@
-﻿namespace AspNet.HtmlControls
+﻿using System.Web.UI;
+
+namespace AspNet.HtmlControls
 {
-    public class Password : Input
+    public class Password : FormField, ITextControl
     {
         protected override InputTypes Type
         {
             get { return InputTypes.Password;}
         }
 
-        public string Value { get; set; }
+        public string Text { get; set; }
 
         protected override void LoadPostData(string postValue, bool hasKey)
         {
             if (hasKey)
-                Value = postValue;
+                Text = postValue;
         }
     }
 }

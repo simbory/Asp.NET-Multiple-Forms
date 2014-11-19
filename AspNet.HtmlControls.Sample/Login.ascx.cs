@@ -6,11 +6,12 @@ namespace AspNet.HtmlControls.Sample
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Response.Write(Password.Text);
         }
 
         protected void Login_Click(object sender, EventArgs e)
         {
-            Visible = false;
+            Response.Write(Password.Text);
         }
     }
 }

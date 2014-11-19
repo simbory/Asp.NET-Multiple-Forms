@@ -43,7 +43,7 @@
     <Compile Include="Form.cs" />
     <Compile Include="FormMethods.cs" />
     <Compile Include="GeneralControl.cs" />
-    <Compile Include="GeneralInput.cs" />
+    <Compile Include="Input.cs" />
     <Compile Include="GoogleMarker.cs" />
     <Compile Include="GoogleMarkerCollection.cs" />
     <Compile Include="GoogleMap.cs" />
@@ -51,7 +51,7 @@
     <Compile Include="ICoordinate.cs" />
     <Compile Include="ImageButton.cs" />
     <Compile Include="Img.cs" />
-    <Compile Include="Input.cs" />
+    <Compile Include="FormField.cs" />
     <Compile Include="InputTypes.cs" />
     <Compile Include="Label.cs" />
     <Compile Include="Link.cs" />

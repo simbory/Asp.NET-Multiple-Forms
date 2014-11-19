@@ -2,7 +2,7 @@
 
 namespace AspNet.HtmlControls
 {
-    public class RadioBox : Input
+    public class RadioBox : FormField
     {
         protected override InputTypes Type
         {
