@@ -12,6 +12,7 @@ namespace AspNet.HtmlControls.Sample
         protected void Sub1_Click(object sender, EventArgs e)
         {
             SubmitText.Text = "Sub1 Clicked";
+            Form2.Controls.Clear();
         }
 
         protected void Sub2_Click(object sender, EventArgs e)

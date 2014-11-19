@@ -70,6 +70,15 @@ namespace AspNet.HtmlControls
             }
         }
 
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            if (Page.Request.HttpMethod == "POST")
+            {
+                RaisePostBackEvent();
+            }
+        }
+
         private bool InForm(Control ctrl)
         {
             if (ctrl == null)
@@ -84,10 +93,6 @@ namespace AspNet.HtmlControls
             if (InForm(this))
             {
                 Attributes["name"] = Name;
-            }
-            if (Page.Request.HttpMethod == "POST")
-            {
-                RaisePostBackEvent();
             }
             base.OnPreRender(e);
         }
