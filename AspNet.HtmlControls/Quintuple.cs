@@ -75,7 +75,7 @@ namespace AspNet.HtmlControls
         }
 
         /// <summary>
-        /// 使用提供的四个对象初始化 <see cref="T:AspNet.HtmlControls.Quintuple"/> 类的新实例。
+        /// 使用提供的五个对象初始化 <see cref="T:AspNet.HtmlControls.Quintuple"/> 类的新实例。
         /// </summary>
         /// <param name="a">分配给 <see cref="F:AspNet.HtmlControls.Quintuple.First"/> 的对象。</param>
         /// <param name="b">分配给 <see cref="F:AspNet.HtmlControls.Quintuple.Second"/> 的对象。</param>
